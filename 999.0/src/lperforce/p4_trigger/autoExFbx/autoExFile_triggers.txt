@@ -1,0 +1,1 @@
+autoExTpose //H/*/*.Assets/*/*/Rig/*.ma "D:\TD_Depot\Software\Lugwit_syncPlug\lugwit_insapp\trayapp\Lib\LPerforce\p4_trigger\autoExFbx\autoExTpose.bat %change% %user% %client% %serverport% %serverhost%"

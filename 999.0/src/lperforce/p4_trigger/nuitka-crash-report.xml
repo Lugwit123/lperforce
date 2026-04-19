@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf8'?>
+<nuitka-compilation-report nuitka_version="2.5rc6" nuitka_commercial_version="not installed" completion="exception">
+  <exception exception_type="PermissionError" exception_value="[Errno 13] Permission denied: 'sync_h_to_g_server_cmd.cmd'">
+Traceback (most recent call last):
+  File "D:\TD_Depot\Software\Lugwit_syncPlug\lugwit_insapp\python_env\Lib\site-packages\nuitka\MainControl.py", line 1155, in main
+    _main()
+  File "D:\TD_Depot\Software\Lugwit_syncPlug\lugwit_insapp\python_env\Lib\site-packages\nuitka\MainControl.py", line 1030, in _main
+    executePostProcessing()
+  File "D:\TD_Depot\Software\Lugwit_syncPlug\lugwit_insapp\python_env\Lib\site-packages\nuitka\PostProcessing.py", line 397, in executePostProcessing
+    putTextFileContents(cmd_filename, cmd_contents)
+  File "D:\TD_Depot\Software\Lugwit_syncPlug\lugwit_insapp\python_env\Lib\site-packages\nuitka\utils\FileOperations.py", line 866, in putTextFileContents
+    with openTextFile(filename, "w", encoding=encoding) as output_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TD_Depot\Software\Lugwit_syncPlug\lugwit_insapp\python_env\Lib\site-packages\nuitka\utils\FileOperations.py", line 843, in openTextFile
+    return open(filename, mode)  # pylint: disable=unspecified-encoding
+           ^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'sync_h_to_g_server_cmd.cmd'
+</exception>
+  <module name="__main__" kind="PythonMainModule" usage="root_module" reason="Root module" source_path="${cwd}\sync_h_to_g_server_cmd.py">
+    <optimization-time pass="1" time="0.04" micro_passes="5" max_branch_merge="34" merged_total="824" />
+    <optimization-time pass="2" time="0.01" micro_passes="1" max_branch_merge="34" merged_total="164" />
+    <module_usages>
+      <module_usage name="site" finding="excluded" line="1" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="4" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="5" />
+      <module_usage name="pathlib" finding="excluded" line="6" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="traceback" finding="excluded" line="7" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="get_error_path" finding="absolute" line="8" />
+      <module_usage name="unlockFile" finding="absolute" line="9" />
+      <module_usage name="codecs" finding="excluded" line="10" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="datetime" finding="excluded" line="11" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="time" finding="absolute" line="12" />
+      <module_usage name="json" finding="excluded" line="13" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="Lugwit_Module" finding="not-found" line="20" />
+      <module_usage name="ntpath" finding="excluded" line="31" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="LPerforce" finding="not-found" line="36" />
+      <module_usage name="io" finding="excluded" line="43" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+    </module_usages>
+  </module>
+  <performance>
+    <memory_usage name="after_launch" value="45637632" />
+    <memory_usage name="before_c_code_generation" value="46780416" />
+    <memory_usage name="before_running_scons" value="49176576" />
+  </performance>
+  <data_composer blob_size="2517" total="217">
+    <module_data filename="__bytecode.const" input_size="0" blob_name=".bytecode" blob_size="3" />
+    <module_data filename="__constants.const" input_size="2276" blob_name="" blob_size="978" />
+    <module_data filename="module.__main__.const" input_size="2941" blob_name="__main__" blob_size="1496" />
+  </data_composer>
+  <command_line>
+    <option value="--nofollow-imports" />
+    <option value="D:\TD_Depot\Software\Lugwit_syncPlug\lugwit_insapp\trayapp\Lib\LPerforce\p4_trigger\sync_h_to_g_server_cmd.py" />
+  </command_line>
+  <plugins>
+    <plugin name="anti-bloat" user_enabled="no" />
+    <plugin name="eventlet" user_enabled="no" />
+    <plugin name="gi" user_enabled="no" />
+    <plugin name="implicit-imports" user_enabled="no" />
+    <plugin name="multiprocessing" user_enabled="no" />
+    <plugin name="options-nanny" user_enabled="no" />
+    <plugin name="pkg-resources" user_enabled="no" />
+    <plugin name="transformers" user_enabled="no" />
+  </plugins>
+  <distributions />
+  <python python_exe="${sys.prefix}\python.exe" python_flavor="Anaconda Python" python_version="3.11.9" os_name="Windows" os_release="10" arch_name="x86_64" filesystem_encoding="utf-8">
+    <search_path>
+      <path value="${cwd}" />
+      <path value="${sys.prefix}\DLLs" />
+      <path value="${sys.prefix}\Lib" />
+      <path value="${sys.prefix}" />
+      <path value="${sys.prefix}\Lib\site-packages" />
+      <path value="${sys.prefix}\Lib\site-packages\win32" />
+      <path value="${sys.prefix}\Lib\site-packages\win32\lib" />
+      <path value="${sys.prefix}\Lib\site-packages\Pythonwin" />
+    </search_path>
+  </python>
+  <output run_filename="${cwd}\sync_h_to_g_server_cmd.cmd" />
+</nuitka-compilation-report>
