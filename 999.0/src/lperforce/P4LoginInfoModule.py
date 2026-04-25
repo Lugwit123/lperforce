@@ -2,11 +2,16 @@
 import os,sys
 import json
 import codecs
+import warnings
 import Lugwit_Module as LM
 
 
 
-configFile =os.path.expandvars(LM.userConfigFile)
+if hasattr(LM, 'userConfigFile'):
+    configFile = os.path.expandvars(LM.userConfigFile)
+else:
+    warnings.warn("Lugwit_Module.userConfigFile 属性不存在，使用默认降级路径")
+    configFile = os.path.join(os.path.expandvars("%USERPROFILE%"), r'.Lugwit\config\config.json')
 
 
 def read_config(file_path):
