@@ -1,0 +1,1 @@
+cmd /k python D:\TD_Depot\Software\Lugwit_syncPlug\lugwit_insapp\trayapp\Lib\LPerforce\p4_trigger\sync_h_to_g_server_cmd.py  "%1" "%2" "%3" "%4" "%5" /H /G
